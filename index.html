@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dyqani Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Produktet tona</h1>
+<p>Zgjidh produktin dhe dërgo porosinë</p>
+</header>
+
+<section class="products">
+<div class="product"><img src="image/IMG_3347.jpeg" alt="Dekorativ kamin"><h3>Dekorative kamin</h3><p>599 den</p><button onclick="selectProduct('Produkt 1')">Porosit</button></div>
+<div class="product"><img src="image/IMG_3348.jpeg" alt="Produkt 2"><h3>Tavoline</h3><p>699 den</p><button onclick="selectProduct('Produkt 2')">Porosit</button></div>
+<div class="product"><img src="image/IMG_3354.jpeg" alt="Produkt 3"><h3>Varse Rroba</h3><p>799 den</p><button onclick="selectProduct('Produkt 3')">Porosit</button></div>
+<div class="product"><img src="produkt4.jpg" alt="Produkt 4"><h3>Produkt 4</h3><p>800 den</p><button onclick="selectProduct('Produkt 4')">Porosit</button></div>
+<div class="product"><img src="produkt5.jpg" alt="Produkt 5"><h3>Produkt 5</h3><p>900 den</p><button onclick="selectProduct('Produkt 5')">Porosit</button></div>
+<div class="product"><img src="produkt6.jpg" alt="Produkt 6"><h3>Produkt 6</h3><p>1000 den</p><button onclick="selectProduct('Produkt 6')">Porosit</button></div>
+<div class="product"><img src="produkt7.jpg" alt="Produkt 7"><h3>Produkt 7</h3><p>1100 den</p><button onclick="selectProduct('Produkt 7')">Porosit</button></div>
+<div class="product"><img src="produkt8.jpg" alt="Produkt 8"><h3>Produkt 8</h3><p>1200 den</p><button onclick="selectProduct('Produkt 8')">Porosit</button></div>
+<div class="product"><img src="produkt9.jpg" alt="Produkt 9"><h3>Produkt 9</h3><p>1300 den</p><button onclick="selectProduct('Produkt 9')">Porosit</button></div>
+<div class="product"><img src="produkt10.jpg" alt="Produkt 10"><h3>Produkt 10</h3><p>1400 den</p><button onclick="selectProduct('Produkt 10')">Porosit</button></div>
+</section>
+
+<section class="order">
+<h2>Formulari i Porosisë</h2>
+<form id="orderForm">
+<label>Emri:</label>
+<input type="text" name="emri" required>
+
+<label>Produkti:</label>
+<input type="text" name="produkti" id="produktInput" readonly required>
+
+<label>Sasia:</label>
+<input type="number" name="sasia" min="1" value="1" required>
+
+<label>Kontakti</label>
+<input type="tel" id="phone" name="phone" placeholder="070 123 456">
+
+<label>Adresa</label>
+<input type="text" name="adresa" required>
+
+<button type="submit">Dërgo Porosinë</button>
+</form>
+<p id="successMsg" style="color:green; display:none;">Porosia u regjistrua me sukses!</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

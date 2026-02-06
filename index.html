@@ -28,20 +28,21 @@
 <section class="order">
 <h2>Formulari i Porosisë</h2>
 <form id="orderForm">
-<label>Emri:</label>
+
+<label>Emri</label>
 <input type="text" name="emri" required>
 
-<label>Produkti:</label>
-<input type="text" name="produkti" id="produktInput" readonly required>
-
-<label>Sasia:</label>
-<input type="number" name="sasia" min="1" value="1" required>
-
 <label>Kontakti</label>
-<input type="tel" id="phone" name="phone" placeholder="070 123 456">
+<input type="text" name="kontakti" required>
 
 <label>Adresa</label>
 <input type="text" name="adresa" required>
+
+<label>Produkti</label>
+<input type="text" name="produkti" id="produktInput" readonly required>
+
+<label>Sasia</label>
+<input type="number" name="sasia" value="1" min="1" required>
 
 <button type="submit">Dërgo Porosinë</button>
 </form>
@@ -50,4 +51,5 @@
 
 <script src="script.js"></script>
 </body>
+
 </html>

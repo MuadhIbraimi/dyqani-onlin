@@ -7,7 +7,7 @@ document.getElementById('orderForm').scrollIntoView({ behavior: 'smooth' });
 document.getElementById('orderForm').addEventListener('submit', function(e) {
 e.preventDefault();
 
-fetch("https://script.google.com/macros/s/AKfycbxX27tmTrfQZHHO-0HNpF2R02h-_suX1XTFSUgpnSdlRyqZTxYFz7Y23HuqavAAoAma2Q/exec", { // vendos këtu Web App URL nga Apps Script
+fetch("https://script.google.com/macros/s/AKfycbzUeguwA-4B3XtbDmZud_gM-UHGAoDehttaXBUPZM0tZtVC7xnXDvTCtbL_LWsryxmfEA/exec", { // vendos këtu Web App URL nga Apps Script
 method: "POST",
 body: new URLSearchParams(new FormData(this))
 })
@@ -18,3 +18,4 @@ document.getElementById('orderForm').reset();
 })
 .catch(error => alert("Gabim në regjistrim: " + error));
 });
+
